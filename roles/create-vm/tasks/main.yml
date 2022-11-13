@@ -1,0 +1,9 @@
+---
+# tasks file for roles/create-vm
+
+
+- debug:
+    var: ansible_env.dnsdomainname
+ 
+
+  

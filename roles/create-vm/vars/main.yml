@@ -1,0 +1,5 @@
+---
+# vars file for roles/create-vm
+NETNAME: ansible-net
+BRIDGE_NAME: ans-br0
+MTU: 1500

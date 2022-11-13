@@ -1,0 +1,10 @@
+- name: create Random MAC 
+  set_fact: 
+    MAC: "{{ '52:54:11' | community.general.random_mac }}"
+  when: MAC is not defined 
+
+
+- name: rander json network
+  template:
+    src: virt-net.json.tpl
+    dest: virt-net.json

@@ -1,2 +1,10 @@
 ---
 # defaults file for roles/create-vm
+NETNAME: ansible-net
+BRIDGE_NAME: ans-br0
+MTU: 1500
+ADDRESS: "192.168.166.1"
+PREFIX: 24
+DHCP_START: "192.168.166.100"
+DHCP_END: "192.168.166.200"
+BOOT_FILE: "BOOTX64.EFI"

@@ -1,9 +1,7 @@
 ---
 # tasks file for roles/create-vm
 
+# - name: verify
+#   include_tasks: verify.yml
 
-- debug:
-    var: ansible_env.dnsdomainname
- 
 
-  

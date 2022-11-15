@@ -1,0 +1,12 @@
+- name: check if TFTP server is set
+  ansible.builtin.fail:
+    msg: "TFTP_SERVER is not set"
+  when: TFTP_SERVER is not defined 
+
+
+- name: Check if bridge {{ BRIDGE_NAME }} is configured 
+  fail:
+    msg: "bridge {{ BRIDGE_NAME }} is already created"
+  when: ansible_facts[BRIDGE_NAME] is defined 
+
+ 

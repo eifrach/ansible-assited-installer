@@ -3,8 +3,7 @@
     MAC: "{{ '52:54:11' | community.general.random_mac }}"
   when: MAC is not defined 
 
-
-- name: rander json network
+- name: rander network
   template:
-    src: virt-net.json.tpl
-    dest: virt-net.json
+    src: virt-net.xml.tpl
+    dest: virt-net.xml
